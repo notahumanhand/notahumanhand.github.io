@@ -12,8 +12,14 @@ h1 {
     text-align: center;
     font-size: 50px;
 }
-h2, h3, h4, h5 {
+h2, h3 {
+    color: #57776e;
     font-family: 'Cormorant SC';
+}
+h4, h5 {
+    color: #8b7853;
+    font-style: italic;
+    font-family: 'Cormorant';
 }
 a {
     color: #268869;
@@ -69,6 +75,33 @@ a:hover {
 }
 .book-link:hover {
     transform: scale(1.10);
+}
+
+.items-list {
+    background: #9a7c5a;
+    border: 5px solid #4c362f;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 20px;
+}
+.item {
+    background: #e4e0d6;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 4px double #f5f5dc;
+    border-left: 8px solid #4c362f;
+    box-shadow: inset 0px 0px 10px #00000080;
+    transition: 0.5s;
+}
+.item:hover {
+    transform: scale(1.05);
+}
+.item h4, .item p, .item h2 {
+    margin: 0;
+}
+.item h4 {
+    margin-top: 10px;
 }
 
 input.fillable {
