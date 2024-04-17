@@ -30,9 +30,8 @@ a:hover {
     text-decoration: underline;
 }
 footer {
-    position: absolute;
-    bottom: 8px;
-    font-size: 12px;
+    position: relative;
+    font-size: 14px;
     background: linear-gradient(to right, white, transparent);
     padding-left: 10px;
     padding-right: 30px;
