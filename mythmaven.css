@@ -103,6 +103,22 @@ a:hover {
 .item h4 {
     margin-top: 10px;
 }
+.item .info-container {
+    display: flex;
+}
+.item .info {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #9a7c5a;
+    background: #ffffff80;
+    width: 80px;
+}
+.item .type {
+    font-size: 19px;
+    font-weight: 700;
+    color: black;
+}
 
 input.fillable {
     background: white;
