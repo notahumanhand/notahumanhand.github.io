@@ -56,6 +56,18 @@ footer {
     color: #00000080;
 }
 
+.infobox {
+    font-style: italic;
+    position: relative;
+    padding: 10px 10px 10px 50px;
+    border: #57776e dotted 2px;
+    background: #f5f3f0;
+    border-radius: 15px;
+    margin: 5px;
+    color: #57776e;
+    display: block;
+}
+
 .shelf {
     display: flex;
     flex-flow: row wrap;
@@ -98,7 +110,7 @@ footer {
     margin: 10px;
     border-radius: 10px;
     border: 4px double #f5f5dc;
-    border-left: 8px solid #4c362f;
+    border-left: 8px solid #4c362f!important;
     box-shadow: inset 0px 0px 10px #00000080;
     transition: 0.5s;
 }
@@ -126,6 +138,34 @@ footer {
     font-size: 19px;
     font-weight: 700;
     color: black;
+}
+
+.black {
+    border-color: #000000;
+}
+.white {
+    border-color: #ffffff;
+}
+.red {
+    border-color: #7D1616;
+}
+.green {
+    border-color: #2F4931;
+}
+.gold {
+    border-color: #E28600;
+}
+.blue {
+    border-color: #3169D9;
+}
+.brown {
+    border-color: #4E3526;
+}
+.purple {
+    border-color: #971EA4;
+}
+.orange {
+    border-color: #E24300;
 }
 
 input.fillable {
