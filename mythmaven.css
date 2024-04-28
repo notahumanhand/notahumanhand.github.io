@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     background: #e4e0d6;
     color: #4c362ffc;
@@ -37,7 +38,21 @@ footer {
     padding-left: 10px;
     padding-right: 30px;
 }
+.infobox {
+    font-style: italic;
+    position: relative;
+    padding: 10px;
+    border: #57776e dotted 2px;
+    background: #f5f3f0;
+    border-radius: 15px;
+    margin: 5px;
+    color: #57776e;
+    display: block;
+    text-align: center;
+}
+/* General Styling */
 
+/* Navigation */
 .nav {
     font-family: CormorantSC;
     background-color: rgb(87, 119, 110, .6);
@@ -55,20 +70,9 @@ footer {
 .nav a:hover {
     color: #00000080;
 }
+/* Navigation */
 
-.infobox {
-    font-style: italic;
-    position: relative;
-    padding: 10px;
-    border: #57776e dotted 2px;
-    background: #f5f3f0;
-    border-radius: 15px;
-    margin: 5px;
-    color: #57776e;
-    display: block;
-    text-align: center;
-}
-
+/* Homepage */
 .shelf {
     display: flex;
     flex-flow: row wrap;
@@ -99,7 +103,9 @@ footer {
 .book-link:hover {
     transform: scale(1.10);
 }
+/* Homepage */
 
+/* Info Pages */
 .items-list {
     background: #9a7c5a;
     border: 5px solid #4c362f;
@@ -142,7 +148,6 @@ footer {
     font-weight: 700;
     color: black;
 }
-
 .black {
     border-color: #000000;
 }
@@ -170,22 +175,31 @@ footer {
 .orange {
     border-color: #E24300;
 }
+/* Info Pages */
 
-input.fillable {
+/* Character Sheet */
+.fillable {
     background: white;
     border: 1px solid #8b7853;
     font-family: 'Cormorant';
+    border-radius: 15px;
 }
-.field {
-    display: flex;
-    background: #57776e;
-    flex-flow: row wrap;
-    padding: 10px;
-    justify-content: space-evenly;
-    max-width: 700px;
+.calculated {
+    background: #e4e0d6;
+    border: 1px solid #8b7853;
+    font-family: 'Cormorant';
+    border-radius: 15px;
+}
+input, select {
+    outline: unset;
+    min-width: 150px;
+    text-align: center;
+}
+input.thin {
+    min-width: 50px;
+    width: 50px;
 }
 .name {
-    background: #57776e;
     margin: 0;
     padding: 10px;
     color: white;
@@ -195,22 +209,34 @@ input.fillable {
     height: 30px;
     font-size: 20px;
 }
-div.fillable {
+.sheet {
+    background: #57776e80;
+    padding: 25px;
+}
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.field-item {
     background: #e4e0d6;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 20px;
-    text-align: center;
-    color: black;
+    padding: 20px;
+    margin: 20px;
 }
-.attributes .fillable input {
-    width: 80px;
-    height: 80px;
-    font-size: 60px;
-    text-align: center;
-    border-radius: 30px;
+.skills .skills-group .field-item:first-of-type {
+    font-weight: 700;
 }
+.field-item.skills {
+    margin-left: 0;
+    margin-right: 0;
+}
+.field-item.prof-item {
+    max-height: 100px;
+}
+/* Character Sheet */
 
+/* Fonts */
 @font-face {
     font-family: 'Cinzel';
     font-style: normal;
@@ -235,3 +261,4 @@ div.fillable {
     src: url(https://fonts.gstatic.com/s/cormorantsc/v18/0yb5GD4kxqXBmOVLG30OGwsuqzAx.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* Fonts */
