@@ -62,8 +62,9 @@ function prof() {
 function physdef() {
     let reflex = document.getElementById('reflex-max').value;
     let prof = document.getElementById('prof').value;
+    let shield = document.getElementById('shield').value;
 
-    let physdef = reflex+prof;
+    let physdef = reflex+prof+shield;
 
     let armour = document.getElementById('armour').value;
 
