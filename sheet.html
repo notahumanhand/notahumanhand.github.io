@@ -33,13 +33,13 @@
                 <option value="gilded">Gilded</option>
             </select>
         </div>
-        <h1 class="title">Character Sheet</h1>
+        <h1 class="title" id="title">Character Sheet</h1>
         <div class="nav">
             <a href="index.html">Return to Homepage</a>
         </div>
         <br>
         <div class="sheet">
-        <h2 class="name"><label for="name">Name: </label><input type="text" id="name" name="name" class="fillable"></h2>
+        <h2 class="name"><label for="name">Name: </label><input type="text" id="name" name="name" class="fillable" onchange="update()"></h2>
             <div class="attributes field">
                 <div class="field-item">
                     <label for="might">Might</label><br>
@@ -61,17 +61,17 @@
             <div class="resources field">
                 <div class="field-item">
                     <label for="health">Health</label><br>
-                    <input type="number" min="0" id="health" name="health" placeholder="0" value="0" class="fillable" onchange="update()"> / 
+                    <input type="number" min="0" max="100" id="health" name="health" placeholder="0" value="0" class="fillable" onchange="update()"> / 
                     <input type="number" id="health-max" name="health-max" placeholder="0" value="0" class="calculated" readonly>
                 </div>
                 <div class="field-item">
                     <label for="prowess">Prowess</label><br>
-                    <input type="number" min="0" id="prowess" name="prowess" placeholder="0" value="0" class="fillable" onchange="update()"> / 
+                    <input type="number" min="0" max="100" id="prowess" name="prowess" placeholder="0" value="0" class="fillable" onchange="update()"> / 
                     <input type="number" id="prowess-max" name="prowess-max" placeholder="0" value="0" class="calculated" readonly>
                 </div>
                 <div class="field-item">
                     <label for="arcana">Arcana</label><br>
-                    <input type="number" min="0" id="arcana" name="arcana" placeholder="0" value="0" class="fillable" onchange="update()"> / 
+                    <input type="number" min="0" max="100" id="arcana" name="arcana" placeholder="0" value="0" class="fillable" onchange="update()"> / 
                     <input type="number" id="arcana-max" name="arcana-max" placeholder="0" value="0" class="calculated" readonly>
                 </div>
             </div>

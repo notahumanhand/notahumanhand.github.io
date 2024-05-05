@@ -1,12 +1,10 @@
 function update() {
+    setname();
     health();
     prowess();
     arcana();
     speed();
     prof();
-    physdef();
-    magdef();
-    maxvals();
 }
 
 function health() {
@@ -60,47 +58,13 @@ function prof() {
         document.getElementById('prof').value = 7;
     }
 }
-function physdef() {
-    let reflex = document.getElementById('reflex-max').value;
-    let prof = document.getElementById('prof').value;
-    let shield = document.getElementById('shield').value;
-
-    let physdef = reflex+prof+shield;
-
-    let armour = document.getElementById('armour').value;
-
-    if (armour=="light-armour" || armour=="hybrid-armour") {
-        physdef += 1;
-    } else if (armour=="medium-armour") {
-        physdef += 2;
-    } else if (armour=="heavy-armour") {
-        physdef+= 4;
+function setname() {
+    let name = document.getElementById('name').value;
+    let str = "Character Sheet"
+    if (name != "") {
+        str = name+"'s Character Sheet"
     }
-
-    document.getElementById('physical-defense').value = physdef;
-}
-function magdef() {
-    let focus = document.getElementById('focus-max').value;
-    let prof = document.getElementById('prof').value;
-
-    let magdef = focus+prof;
-
-    let armour = document.getElementById('armour').value;
-
-    if (armour=="light-robes" || armour=="hybrid-armour") {
-        magdef += 1;
-    } else if (armour=="medium-robes") {
-        magdef += 2;
-    } else if (armour=="heavy-robes") {
-        magdef+= 4;
-    }
-
-    document.getElementById('magical-defense').value = magdef;
-}
-function maxvals() {
-    document.getElementById('arcana').max = document.getElementById('arcana-max').value;
-    document.getElementById('prowess').max = document.getElementById('prowess-max').value;
-    document.getElementById('health').max = document.getElementById('health-max').value;
+    document.getElementById('title').innerText = str;
 }
 
 function theme() {
