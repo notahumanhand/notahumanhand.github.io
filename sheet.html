@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="mythmaven.css">
         <script src="mythmaven.js"></script>
     </head>
-    <body id="sheet-body">
+    <body id="sheet-body" onload="update()">
         <div class="theme-select">
             <label for="theme-select">Theme</label><br>
             <select name="theme-select" id="theme-select" onchange="theme()">
@@ -30,6 +30,7 @@
                 <option value="lover">Lover</option>
                 <option value="beach">Beach</option>
                 <option value="marshlands">Marshlands</option>
+                <option value="gilded">Gilded</option>
             </select>
         </div>
         <h1 class="title">Character Sheet</h1>

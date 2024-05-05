@@ -6,6 +6,7 @@ function update() {
     prof();
     physdef();
     magdef();
+    maxvals();
 }
 
 function health() {
@@ -95,6 +96,11 @@ function magdef() {
     }
 
     document.getElementById('magical-defense').value = magdef;
+}
+function maxvals() {
+    document.getElementById('arcana').max = document.getElementById('arcana-max').value;
+    document.getElementById('prowess').max = document.getElementById('prowess-max').value;
+    document.getElementById('health').max = document.getElementById('health-max').value;
 }
 
 function theme() {
