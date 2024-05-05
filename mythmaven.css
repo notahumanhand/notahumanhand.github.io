@@ -70,7 +70,7 @@ footer {
 
 /* Navigation */
 .nav {
-    font-family: CormorantSC;
+    font-family: 'Cormorant SC';
     background-color: var(--t-primary);
     border: 1px solid var(--root);
     padding: 5px;
