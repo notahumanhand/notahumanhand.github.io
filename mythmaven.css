@@ -51,7 +51,7 @@ a:hover {
 footer {
     position: relative;
     font-size: 14px;
-    background: linear-gradient(to right, white, transparent);
+    background: linear-gradient(to right, var(--fill), transparent);
     padding-left: 10px;
     padding-right: 30px;
 }
@@ -391,10 +391,10 @@ body.fey {
 
 body.whiteout {
     --text: black;
-    --primary: #a4a4a4;
-    --t-primary: #a4a4a480;
-    --secondary: #6d6d6d;
-    --tertiary: #eaeaea;
+    --primary: black;
+    --t-primary: white;
+    --secondary: black;
+    --tertiary: #c5c5c5;
     --link: #363636;
     --h-link: #2d2d2d;
 }
