@@ -1,33 +1,49 @@
 /* General Styling */
+:root {
+    --fill: white;
+    --t-fill: #ffffff80;
+    --primary: #57776e;
+    --t-primary: #57776e80;
+    --secondary: #8b7853;
+    --text: #4c362f;
+    --info: #f5f3f0;
+    --tertiary: #e4e0d6;
+    --shelf: #9a7c5a;
+    --dark: black;
+    --t-dark: #00000080;
+    --link: #268869;
+    --h-link: #1c634d;
+}
+
 body {
-    background: #e4e0d6;
-    color: #4c362ffc;
+    background: var(--tertiary);
+    color: var(--text);
     font-family: 'Cormorant';
 }
 
 h1 {
     font-family: 'Cinzel';
-    color: #57776e;
+    color: var(--root);
 }
 .title {
     text-align: center;
     font-size: 50px;
 }
 h2, h3 {
-    color: #57776e;
+    color: var(--root);
     font-family: 'Cormorant SC';
 }
 h4, h5 {
-    color: #8b7853;
+    color: var(--secondary);
     font-style: italic;
     font-family: 'Cormorant';
 }
 a {
-    color: #268869;
+    color: var(--link);
     text-decoration: none;
 }
 a:hover {
-    color: #1c634d;
+    color: var(--h-link);
     text-decoration: underline;
 }
 
@@ -42,11 +58,11 @@ footer {
     font-style: italic;
     position: relative;
     padding: 10px;
-    border: #57776e dotted 2px;
-    background: #f5f3f0;
+    border: var(--root) dotted 2px;
+    background: var(--info);
     border-radius: 15px;
     margin: 5px;
-    color: #57776e;
+    color: var(--root);
     display: block;
     text-align: center;
 }
@@ -55,20 +71,20 @@ footer {
 /* Navigation */
 .nav {
     font-family: CormorantSC;
-    background-color: rgb(87, 119, 110, .6);
-    border: 1px solid #57776e;
+    background-color: var(--t-primary);
+    border: 1px solid var(--root);
     padding: 5px;
-    color: black;
+    color: var(--dark);
     text-decoration: none;
     font-family: 'Cormorant SC';
 }
 .nav a {
-    color: black;
+    color: var(--dark);
     text-decoration: none;
     transition: 0.3s;
 }
 .nav a:hover {
-    color: #00000080;
+    color: var(--t-dark);
 }
 /* Navigation */
 
@@ -76,8 +92,8 @@ footer {
 .shelf {
     display: flex;
     flex-flow: row wrap;
-    background: #9a7c5a;
-    border: 5px solid #4c362f;
+    background: var(--shelf);
+    border: 5px solid var(--text);
     border-radius: 30px;
     padding: 30px;
     padding-bottom: 50px;
@@ -88,7 +104,7 @@ footer {
 }
 .shelf a {
     text-align: center;
-    color: black;
+    color: var(--dark);
     text-decoration: none;
     font-family: 'Cormorant SC';
     font-size: 20px;
@@ -107,19 +123,19 @@ footer {
 
 /* Info Pages */
 .items-list {
-    background: #9a7c5a;
-    border: 5px solid #4c362f;
+    background: var(--shelf);
+    border: 5px solid var(--text);
     border-radius: 20px;
     padding: 25px;
     margin: 20px;
 }
 .item {
-    background: #e4e0d6;
+    background: var(--tertiary);
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    border: 4px double #f5f5dc;
-    border-left: 8px solid #4c362f!important;
+    border: 4px double var(--info);
+    border-left: 8px solid var(--text)!important;
     box-shadow: inset 0px 0px 10px #00000080;
     transition: 0.5s;
 }
@@ -139,14 +155,14 @@ footer {
     margin: 10px;
     padding: 5px;
     border-radius: 10px;
-    border: 1px solid #9a7c5a;
-    background: #ffffff80;
+    border: 1px solid var(--shelf);
+    background: var(--t-fill);
     width: 120px;
 }
 .item .type {
     font-size: 19px;
     font-weight: 700;
-    color: black;
+    color: var(--dark);
 }
 .black {
     border-color: #000000;
@@ -179,14 +195,14 @@ footer {
 
 /* Character Sheet */
 .fillable {
-    background: white;
-    border: 1px solid #8b7853;
+    background: var(--fill);
+    border: 1px solid var(--secondary);
     font-family: 'Cormorant';
     border-radius: 15px;
 }
 .calculated {
-    background: #e4e0d6;
-    border: 1px solid #8b7853;
+    background: var(--tertiary);
+    border: 1px solid var(--secondary);
     font-family: 'Cormorant';
     border-radius: 15px;
 }
@@ -202,7 +218,7 @@ input.thin {
 .name {
     margin: 0;
     padding: 10px;
-    color: white;
+    color: var(--fill);
 }
 .name input {
     width: 90%;
@@ -210,7 +226,7 @@ input.thin {
     font-size: 20px;
 }
 .sheet {
-    background: #57776e80;
+    background: var(--t-primary);
     padding: 25px;
 }
 .field {
@@ -220,7 +236,7 @@ input.thin {
     justify-content: flex-start;
 }
 .field-item {
-    background: #e4e0d6;
+    background: var(--tertiary);
     padding: 20px;
     margin: 20px;
 }
