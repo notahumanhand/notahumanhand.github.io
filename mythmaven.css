@@ -108,9 +108,6 @@ body.shadow {
     --dark: white;
     --t-dark: #ffffff80;
 }
-body.shadow input, body.shadow select {
-    color: white;
-}
 
 body.righteous {
     --primary: #e19a18;
@@ -324,6 +321,7 @@ footer {
     border-radius: 15px;
 }
 input, select {
+    color: var(--text);
     outline: unset;
     min-width: 150px;
     text-align: center;
