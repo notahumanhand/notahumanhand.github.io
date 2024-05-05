@@ -14,119 +14,6 @@
     --h-link: #1c634d;
 }
 
-body.flame {
-    --primary: #a8091c;
-    --t-primary: #a8091c80;
-    --secondary: #de3d1c;
-    --tertiary: #f7ec8e;
-    --link: #5a040e;
-    --h-link: #340208;
-}
-
-body.too-blue {
-    --text: #141526;
-    --primary: #417fb8;
-    --t-primary: #417fb880;
-    --tertiary: #b9d3ed;
-    --secondary: #225064;
-    --link: #1d5467;
-    --h-link: #133e4c;
-}
-
-body.ice-lichen {
-    --text: #4c494e;
-    --primary: #778792;
-    --t-primary: #77879280;
-    --secondary: #a4b08c;
-    --tertiary: #f1efcd;
-    --link: #192923;
-    --h-link: #33443e;
-}
-
-body.vibrance {
-    --text: #11556c;
-    --primary: #bd3b2f;
-    --t-primary: #bd3b2f80;
-    --secondary: #b5c41f;
-    --tertiary: #f3eec2;
-    --link: #f86979;
-    --h-link: #c15561;
-}
-
-body.savannah {
-    --text: #6d3a35;
-    --primary: #6d3a35;
-    --t-primary: #aeaa81;
-    --secondary: #aa795e;
-    --tertiary: #e4d5b9;
-    --link: #868660;
-    --h-link: #70704c;
-}
-
-body.bloodstains {
-    --text: #220705;
-    --primary: #6d3a35;
-    --t-primary: #6d3a3580;
-    --secondary: #72221b;
-    --tertiary: #d9d1ca;
-    --link: #690700;
-    --h-link: #b00c00;
-}
-
-body.wooded {
-    --text: #191613;
-    --primary: #354f1e;
-    --t-primary: #354f1e80;
-    --fill: #f6f5e5;
-    --t-fill: #f6f5e580;
-    --secondary: #8cb764;
-    --tertiary: #e1d1be;
-    --link: #57524a;
-    --h-link: #57524a80;
-}
-
-body.summer {
-    --text: #5a3646;
-    --primary: #ef7037;
-    --t-primary: #e1ae65;
-    --secondary: #46baa1;
-    --tertiary: #fcf8c7;
-    --link: #e28f19;
-    --h-link: #f5a83e;
-}
-
-body.shadow {
-    --text: white;
-    --fill: black;
-    --t-fill: #00000080;
-    --primary: #b3b3b3;
-    --t-primary: #b3b3b380;
-    --secondary: #dedede;
-    --tertiary: #333333;
-    --link: #ebebeb;
-    --h-link: #d4d4d4;
-    --dark: white;
-    --t-dark: #ffffff80;
-}
-
-body.righteous {
-    --primary: #e19a18;
-    --t-primary: #e19a1880;
-    --secondary: #b91c1c;
-    --tertiary: #fbf9e0;
-    --link: #e28f19;
-    --h-link: #f5a83e;
-}
-
-body.fey {
-    --primary: #a518e1;
-    --t-primary: #a518e180;
-    --secondary: #b91c87;
-    --tertiary: #fae0fb;
-    --link: #e2197a;
-    --h-link: #b50359;
-}
-
 /* General Styling */
 
 body {
@@ -384,6 +271,183 @@ label {
     border-radius: 15px;
 }
 /* Character Sheet */
+
+/* Themes */
+body.flame {
+    --primary: #a8091c;
+    --t-primary: #a8091c80;
+    --secondary: #de3d1c;
+    --tertiary: #f7ec8e;
+    --link: #5a040e;
+    --h-link: #340208;
+}
+
+body.too-blue {
+    --text: #141526;
+    --primary: #417fb8;
+    --t-primary: #417fb880;
+    --tertiary: #b9d3ed;
+    --secondary: #225064;
+    --link: #1d5467;
+    --h-link: #133e4c;
+}
+
+body.ice-lichen {
+    --text: #4c494e;
+    --primary: #778792;
+    --t-primary: #77879280;
+    --secondary: #a4b08c;
+    --tertiary: #f0f5e8;
+    --link: #192923;
+    --h-link: #33443e;
+}
+
+body.vibrance {
+    --text: #11556c;
+    --primary: #bd3b2f;
+    --t-primary: #bd3b2f80;
+    --secondary: #b5c41f;
+    --tertiary: #f3eec2;
+    --link: #f86979;
+    --h-link: #c15561;
+}
+
+body.savannah {
+    --text: #6d3a35;
+    --primary: #6d3a35;
+    --t-primary: #aeaa81;
+    --secondary: #aa795e;
+    --tertiary: #e4d5b9;
+    --link: #868660;
+    --h-link: #70704c;
+}
+
+body.bloodstains {
+    --text: #220705;
+    --primary: #6d3a35;
+    --t-primary: #6d3a3580;
+    --secondary: #72221b;
+    --tertiary: #d9d1ca;
+    --link: #690700;
+    --h-link: #b00c00;
+}
+
+body.wooded {
+    --text: #191613;
+    --primary: #354f1e;
+    --t-primary: #354f1e80;
+    --fill: #f6f5e5;
+    --t-fill: #f6f5e580;
+    --secondary: #8cb764;
+    --tertiary: #e1d1be;
+    --link: #57524a;
+    --h-link: #57524a80;
+}
+
+body.summer {
+    --text: #5a3646;
+    --primary: #ef7037;
+    --t-primary: #e1ae65;
+    --secondary: #46baa1;
+    --tertiary: #fcf8c7;
+    --link: #e28f19;
+    --h-link: #f5a83e;
+}
+
+body.shadow {
+    --text: white;
+    --fill: black;
+    --t-fill: #00000080;
+    --primary: #b3b3b3;
+    --t-primary: #b3b3b380;
+    --secondary: #dedede;
+    --tertiary: #333333;
+    --link: #ebebeb;
+    --h-link: #d4d4d4;
+    --dark: white;
+    --t-dark: #ffffff80;
+}
+
+body.righteous {
+    --primary: #e19a18;
+    --t-primary: #e19a1880;
+    --secondary: #b91c1c;
+    --tertiary: #fbf9e0;
+    --link: #e28f19;
+    --h-link: #f5a83e;
+}
+
+body.fey {
+    --primary: #a518e1;
+    --t-primary: #a518e180;
+    --secondary: #b91c87;
+    --tertiary: #fae0fb;
+    --link: #e2197a;
+    --h-link: #b50359;
+}
+
+body.whiteout {
+    --text: black;
+    --primary: #a4a4a4;
+    --t-primary: #a4a4a480;
+    --secondary: #6d6d6d;
+    --tertiary: #eaeaea;
+    --link: #363636;
+    --h-link: #2d2d2d;
+}
+
+body.waves {
+    --text: #142626;
+    --primary: #1d9288;
+    --t-primary: #1d928880;
+    --tertiary: #e5f6f6;
+    --secondary: #226463;
+    --link: #1d6759;
+    --h-link: #0d443a;
+}
+
+body.eternity {
+    --text: #212121;
+    --primary: #471152;
+    --t-primary: #47115280;
+    --tertiary: #f7e8f9;
+    --secondary: #b780e7;
+    --link: #703aad;
+    --h-link: #531f8f;
+}
+
+body.lover {
+    --text: #220705;
+    --primary: #9e3e73;
+    --t-primary: #6d355480;
+    --secondary: #721b56;
+    --tertiary: #f7e5eb;
+    --link: #690700;
+    --h-link: #b00c00;
+}
+
+body.beach {
+    --text: #5a3646;
+    --primary: #46baa1;
+    --t-primary: #46baa180;
+    --secondary: #340c02;
+    --tertiary: #fcf8c7;
+    --link: #e28f19;
+    --h-link: #f5a83e;
+}
+
+body.marshlands {
+    --text: #f6f8e6;
+    --primary: #536146;
+    --t-primary: #333c2b80;
+    --secondary: #6c7166;
+    --tertiary: #1d2616;
+    --fill: #191613;
+    --t-fill: #19161380;
+    --link: #0a3106;
+    --h-link: #0rgb(233, 246, 224);
+}
+/* Themes */
 
 /* Fonts */
 @font-face {
