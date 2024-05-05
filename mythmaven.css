@@ -95,6 +95,41 @@ body.summer {
     --h-link: #f5a83e;
 }
 
+body.shadow {
+    --text: white;
+    --fill: black;
+    --t-fill: #00000080;
+    --primary: #b3b3b3;
+    --t-primary: #b3b3b380;
+    --secondary: #dedede;
+    --tertiary: #333333;
+    --link: #ebebeb;
+    --h-link: #d4d4d4;
+    --dark: white;
+    --t-dark: #ffffff80;
+}
+body.shadow input, body.shadow select {
+    color: white;
+}
+
+body.righteous {
+    --primary: #e19a18;
+    --t-primary: #e19a1880;
+    --secondary: #b91c1c;
+    --tertiary: #fbf9e0;
+    --link: #e28f19;
+    --h-link: #f5a83e;
+}
+
+body.fey {
+    --primary: #a518e1;
+    --t-primary: #a518e180;
+    --secondary: #b91c87;
+    --tertiary: #fae0fb;
+    --link: #e2197a;
+    --h-link: #b50359;
+}
+
 /* General Styling */
 
 body {
@@ -296,6 +331,9 @@ input, select {
 input.thin {
     min-width: 50px;
     width: 50px;
+}
+label {
+    color: var(--text);
 }
 .name {
     margin: 0;
