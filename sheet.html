@@ -8,7 +8,21 @@
         <link rel="stylesheet" href="mythmaven.css">
         <script src="mythmaven.js"></script>
     </head>
-    <body>
+    <body id="sheet-body">
+        <div class="theme-select">
+            <label for="theme-select">Theme</label><br>
+            <select name="theme-select" id="theme-select" onchange="theme()">
+                <option value="default">Default</option>
+                <option value="flame">Flame</option> 
+                <option value="too-blue">Too Blue</option> 
+                <option value="ice-lichen">Ice Lichen</option> 
+                <option value="vibrance">Vibrance</option> 
+                <option value="soft-grass">Soft Grass</option>
+                <option value="bloodstains">Bloodstains</option>
+                <option value="wooded">Wooded</option>
+                <option value="summer">Summer</option>
+            </select>
+        </div>
         <h1 class="title">Character Sheet</h1>
         <div class="nav">
             <a href="index.html">Return to Homepage</a>

@@ -332,6 +332,21 @@ input.thin {
 .field-item.prof-item {
     max-height: 100px;
 }
+.theme-select {
+    background: var(--t-primary);
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.theme-select select {
+    background: var(--fill);
+    border: 1px solid var(--secondary);
+    font-family: 'Cormorant';
+    border-radius: 15px;
+}
 /* Character Sheet */
 
 /* Fonts */
