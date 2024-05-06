@@ -55,6 +55,15 @@ footer {
     padding-left: 10px;
     padding-right: 30px;
 }
+.bug-report {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: var(--info);
+    border: var(--primary) dotted 2px;
+    padding: 0px 10px;
+    border-radius: 15px;
+}
 .infobox {
     font-style: italic;
     position: relative;
