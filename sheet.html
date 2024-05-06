@@ -10,9 +10,8 @@
     </head>
     <body id="sheet-body" onload="update()">
         <div class="theme-select">
-            <label for="theme-select">Theme</label><br>
             <select name="theme-select" id="theme-select" onchange="theme()">
-                <option value="default">Default</option>
+                <option value="default">Default Theme</option>
                 <option value="beach">Beach</option>
                 <option value="bloodstains">Bloodstains</option>
                 <option value="eternity">Eternity</option>
@@ -152,12 +151,12 @@
                     <div class="skills-group">
                         <div class="field-item">
                             <label for="fortitude">Fortitude</label><br>
-                            <input type="number" min="0" id="fortitude" name="fortitude" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="fortitude" name="fortitude" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="fortitude-total" name="fortitude-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="athletics">Athletics</label><br>
-                            <input type="number" min="0" id="athletics" name="athletics" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" id="athletics" name="athletics" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="athletics-total" name="athletics-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                     </div>
@@ -167,22 +166,22 @@
                     <div class="skills-group">
                         <div class="field-item">
                             <label for="reflex">Reflex</label><br>
-                            <input type="number" min="0" id="reflex" name="reflex" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="reflex" name="reflex" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="reflex-total" name="reflex-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="acrobatics">Acrobatics</label><br>
-                            <input type="number" min="0" id="acrobatics" name="acrobatics" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="acrobatics" name="acrobatics" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="acrobatics-total" name="acrobatics-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="stealth">Stealth</label><br>
-                            <input type="number" min="0" id="stealth" name="stealth" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="stealth" name="stealth" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="stealth-total" name="stealth-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="sleight">Sleight of Hand</label><br>
-                            <input type="number" min="0" id="sleight" name="sleight" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="sleight" name="sleight" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="sleight-total" name="sleight-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                     </div>
@@ -192,37 +191,37 @@
                     <div class="skills-group">
                         <div class="field-item">
                             <label for="focus">Focus</label><br>
-                            <input type="number" min="0" id="focus" name="focus" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="focus" name="focus" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="focus-total" name="focus-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="history">History</label><br>
-                            <input type="number" min="0" id="history" name="history" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="history" name="history" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="history-total" name="history-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="magic">Magic</label><br>
-                            <input type="number" min="0" id="magic" name="magic" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="magic" name="magic" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="magic-total" name="magic-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="medicine">Medicine</label><br>
-                            <input type="number" min="0" id="medicine" name="medicine" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="medicine" name="medicine" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="medicine-total" name="medicine-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="nature">Nature</label><br>
-                            <input type="number" min="0" id="nature" name="nature" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="nature" name="nature" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="nature-total" name="nature-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="religion">Religion</label><br>
-                            <input type="number" min="0" id="religion" name="religion" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="religion" name="religion" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="religion-total" name="religion-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="world">World</label><br>
-                            <input type="number" min="0" id="world" name="world" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="world" name="world" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="world-total" name="world-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                     </div>
@@ -232,37 +231,37 @@
                     <div class="skills-group">
                         <div class="field-item">
                             <label for="will">Will</label><br>
-                            <input type="number" min="0" id="will" name="will" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="will" name="will" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="will-total" name="will-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="deception">Deception</label><br>
-                            <input type="number" min="0" id="deception" name="deception" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="deception" name="deception" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="deception-total" name="deception-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="insight">Insight</label><br>
-                            <input type="number" min="0" id="insight" name="insight" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="insight" name="insight" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="insight-total" name="insight-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="intimidation">Intimidation</label><br>
-                            <input type="number" min="0" id="intimidation" name="intimidation" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="intimidation" name="intimidation" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="intimidation-total" name="intimidation-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="perception">Perception</label><br>
-                            <input type="number" min="0" id="perception" name="perception" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="perception" name="perception" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="perception-total" name="perception-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="performance">Performance</label><br>
-                            <input type="number" min="0" id="performance" name="performance" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="performance" name="performance" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="performance-total" name="performance-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                         <div class="field-item">
                             <label for="persuasion">Persuasion</label><br>
-                            <input type="number" min="0" id="persuasion" name="persuasion" placeholder="0" value="0" class="fillable thin" onchange="update()">
+                            <input type="number" min="0" max="7" id="persuasion" name="persuasion" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
                             <input type="number" id="persuasion-total" name="persuasion-total" placeholder="0" value="0" class="calculated thin" readonly>
                         </div>
                     </div>
