@@ -240,6 +240,11 @@
                 </tr>
                 <tr>
                     <td class="section">
+                        <label for="magic"><small>K</small> Magic</label><br>
+                        <input type="number" min="0" max="7" id="magic" name="magic" placeholder="0" value="0" class="fillable thin skill" onchange="update()"><br class="mobile">
+                        <input type="number" id="magic-total" name="magic-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td class="section">
                         <label for="medicine"><small>K</small> Medicine</label><br>
                         <input type="number" min="0" max="7" id="medicine" name="medicine" placeholder="0" value="0" class="fillable thin skill" onchange="update()"><br class="mobile">
                         <input type="number" id="medicine-total" name="medicine-total" placeholder="0" value="0" class="calculated thin" readonly>
@@ -264,13 +269,13 @@
                         <input type="number" min="0" max="7" id="persuasion" name="persuasion" placeholder="0" value="0" class="fillable thin skill" onchange="update()"><br class="mobile">
                         <input type="number" id="persuasion-total" name="persuasion-total" placeholder="0" value="0" class="calculated thin" readonly>
                     </td>
+                </tr>
+                <tr>
                     <td class="section">
                         <label for="religion"><small>K</small> Religion</label><br>
                         <input type="number" min="0" max="7" id="religion" name="religion" placeholder="0" value="0" class="fillable thin skill" onchange="update()"><br class="mobile">
                         <input type="number" id="religion-total" name="religion-total" placeholder="0" value="0" class="calculated thin" readonly>
                     </td>
-                </tr>
-                <tr>
                     <td class="section">
                         <label for="stealth"><small>A</small> Stealth</label><br>
                         <input type="number" min="0" max="7" id="stealth" name="stealth" placeholder="0" value="0" class="fillable thin skill" onchange="update()"><br class="mobile">
