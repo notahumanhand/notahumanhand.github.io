@@ -290,6 +290,26 @@ td.section {
     overflow: hidden;
     white-space: nowrap;
 }
+td small {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--fill);
+    border-radius: 5px;
+    padding: 2px;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    td small {
+        display: none;
+    }
+}
+.separator {
+    font-family: 'Cormorant SC';
+    font-size: 30px;
+    text-align: center;
+}
 .theme-select {
     background: var(--t-primary);
     display: block;
