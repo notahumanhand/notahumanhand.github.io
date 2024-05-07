@@ -299,7 +299,98 @@
                     <td class="break" colspan="6"></td>
                 </tr>
                 <tr>
-                    <td class="separator" colspan="6">Traits</td>
+                    <td class="separator" colspan="3">Traits</td>
+                    <td class="separator" colspan="3">Spells</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="section">
+                        <label for="trait-name">Trait</label><br>
+                        <input type="text" name="trait-name" class="fillable trait" onchange="update()">
+                        <div class="info-container">
+                            <div class="info">
+                                <label for="trait-source">Source</label><br>
+                                <input type="text" name="trait-source" class="fillable trait" onchange="update()">
+                            </div>
+                            <div class="info">
+                                <label for="trait-cost">Cost</label><br>
+                                <input type="text" name="trait-cost" class="fillable trait" onchange="update()">
+                            </div>
+                        </div>
+                        <label for="trait-description">Description</label><br>
+                        <textarea name="trait-description" rows="4" cols="50" class="fillable trait"></textarea>
+                    </td>
+                    <td colspan="3" class="section">
+                        <label for="spell-name">Spell</label><br>
+                        <input type="text" name="spell-name" class="fillable spell" onchange="update()">
+                        <div class="info-container">
+                            <div class="info">
+                                <label for="spell-colour">Colour</label><br>
+                                <select type="text" name="spell-colour" class="fillable spell" onchange="update()">
+                                    <option value="black">Black</option> 
+                                    <option value="white">White</option> 
+                                    <option value="red">Red</option>
+                                    <option value="green">Green</option>
+                                    <option value="gold">Gold</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="brown">Brown</option>
+                                    <option value="purple">Purple</option>
+                                    <option value="orange">Orange</option>
+                                </select>
+                            </div>
+                            <div class="info">
+                                <label for="spell-type">Type</label><br>
+                                <select type="text" name="spell-type" class="fillable spell" onchange="update()">
+                                    <option value="attack">Attack</option> 
+                                    <option value="buff">Buff</option> 
+                                    <option value="control">Control</option>
+                                    <option value="creation">Creation</option>
+                                    <option value="debuff">Debuff</option>
+                                    <option value="detection">Detection</option>
+                                    <option value="healing">Healing</option>
+                                    <option value="illusion">Illusion</option>
+                                    <option value="protection">Protection</option>
+                                    <option value="teleportation">Teleportation</option>
+                                    <option value="utility">Utility</option>
+                                </select>
+                            </div>
+                            <div class="info">
+                                <label for="spell-casting">Casting</label><br>
+                                <select type="text" name="spell-casting" class="fillable spell" onchange="update()">
+                                    <option value="basic">Basic Action</option> 
+                                    <option value="swift">Swift Action</option>
+                                    <option value="reaction">Reaction</option>
+                                </select>
+                            </div>
+                            <div class="info">
+                                <label for="spell-duration">Duration</label><br>
+                                <select type="text" name="spell-duration" class="fillable spell" onchange="update()">
+                                    <option value="instant">Instant</option> 
+                                    <option value="turn">Turn</option>
+                                    <option value="round">Round</option>
+                                    <option value="encounter">Encounter</option>
+                                    <option value="day">Day</option>
+                                    <option value="indefinite">Indefinite</option>
+                                </select>
+                            </div>
+                            <div class="info">
+                                <label for="spell-range">Range</label><br>
+                                <select type="text" name="spell-range" class="fillable spell" onchange="update()">
+                                    <option value="self">Self</option> 
+                                    <option value="melee">Melee</option>
+                                    <option value="close">Close</option>
+                                    <option value="short">Short</option>
+                                    <option value="long">Long</option>
+                                    <option value="extreme">Extreme</option>
+                                </select>
+                            </div>
+                            <div class="info">
+                                <label for="spell-cost">Arcana Cost</label><br>
+                                <input type="text" name="spell-cost" class="fillable trait" onchange="update()">
+                            </div>
+                        </div>
+                        <label for="spell-description">Description</label><br>
+                        <textarea name="spell-description" rows="4" cols="50" class="fillable spell"></textarea>
+                    </td>
                 </tr>
             </table>
         </div>

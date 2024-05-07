@@ -179,8 +179,9 @@ footer {
 .item h4 {
     margin-top: 10px;
 }
-.item .info-container {
+.info-container {
     display: flex;
+    flex-wrap: wrap;
 }
 .item .info {
     margin: 10px;
@@ -404,7 +405,7 @@ body.bloodstains {
     --t-primary: #6d3a3580;
     --secondary: #72221b;
     --tertiary: #d9d1ca;
-    --t-tertiary: #8e686880;
+    --t-tertiary: #83333380;
     --link: #690700;
     --h-link: #b00c00;
 }
