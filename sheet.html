@@ -44,19 +44,20 @@
             <br>
             <table class="sheet">
                 <tr>
-                    <td colspan="5" class="section">
+                    <td colspan="4" class="section">
                         <h2 class="name"><label for="name">Name: </label><input type="text" id="name" name="name" class="fillable" onchange="update()"></h2>
                     </td>
                     <td class="section">
                         <label for="level">Level</label><br>
                         <input type="number" min="1" max="20" id="level" name="level" placeholder="1" value="1" class="fillable" onchange="update()">
                     </td>
-                </tr>
-                <tr>
-                    <td colspan="2" class="section">
+                    <td class="section">
                         <label for="species">Species</label><br>
                         <input type="text" id="species" name="species" class="fillable" onchange="update()">
                     </td>
+                </tr>
+                <tr>
+                    <td class="break" colspan="6"></td>
                 </tr>
                 <tr>
                     <td class="section">
@@ -115,6 +116,9 @@
                     </td>
                 </tr>
                 <tr>
+                    <td class="break" colspan="6"></td>
+                </tr>
+                <tr>
                     <td class="section">
                         <label for="size">Size</label><br>
                         <select name="size" id="size" class="size fillable" onchange="update()"> 
@@ -154,7 +158,21 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="section separator" colspan="6">Skills</td>
+                    <td colspan="2" class="section">
+                        <label for="primary-trait">Primary Trait</label><br>
+                        <textarea id="primary-trait" name="primary-trait" rows="4" cols="50" class="fillable"></textarea>
+                    </td>
+                    <td colspan="2" class="section">
+                        <label for="species">Secondary Trait</label><br>
+                        <textarea id="secondary-trait" name="secondary-trait" rows="4" cols="50" class="fillable"></textarea>
+                    </td>
+                    <td colspan="2" class="section">
+                        <label for="species">Tertiary Trait</label><br>
+                        <textarea id="tertiary-trait" name="tertiary-trait" rows="4" cols="50" class="fillable"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="separator" colspan="6">Skills</td>
                 </tr>
                 <tr>
                     <td class="section">
@@ -186,7 +204,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="section" colspan="6"></td>
+                    <td class="break" colspan="6"></td>
                 </tr>
                 <tr>
                     <td class="section">

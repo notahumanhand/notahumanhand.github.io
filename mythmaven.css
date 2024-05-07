@@ -71,7 +71,8 @@ a:hover {
 footer {
     position: relative;
     font-size: 14px;
-    background: linear-gradient(to right, var(--fill), transparent);
+    color: black;
+    background: linear-gradient(to right, white, white, transparent);
     padding-left: 10px;
     padding-right: 30px;
 }
@@ -236,7 +237,7 @@ footer {
     font-family: 'Cormorant';
     border-radius: 15px;
 }
-input, select {
+input, select, textarea {
     color: var(--text);
     outline: unset;
     width: 90%;
@@ -279,6 +280,7 @@ label {
         margin-bottom: 20px;
         font-weight: 700;
         table-layout: fixed;
+        padding: 0;
     }
 }
 td.section {
@@ -289,6 +291,10 @@ td.section {
     text-overflow: clip;
     overflow: hidden;
     white-space: nowrap;
+}
+td.break {
+    padding: 5px;
+    border-radius: 15px;
 }
 td small {
     display: inline-block;
@@ -309,6 +315,10 @@ td small {
     font-family: 'Cormorant SC';
     font-size: 30px;
     text-align: center;
+    color: var(--fill);
+    padding: 5px;
+    border-radius: 15px;
+    background: var(--t-primary);
 }
 .theme-select {
     background: var(--t-primary);
