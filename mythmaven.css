@@ -16,10 +16,22 @@
 
 /* General Styling */
 
-body {
+.page {
+    display: block;
+    width: 95%;
+    height: 80%;
+    margin: auto;
+    margin-top: 20px;
     background: var(--tertiary);
     color: var(--text);
     font-family: 'Cormorant';
+    border-radius: 25px;
+    padding: 10px;
+}
+
+body {
+    background: green;
+    background: url(background.png);
 }
 
 h1 {
