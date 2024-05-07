@@ -342,6 +342,12 @@ td small {
     font-family: 'Cormorant';
     border-radius: 15px;
 }
+.add {
+    text-align: center;
+    font-family: 'Cormorant SC';
+    font-size: 20px;
+    padding: 5px;
+}
 /* Character Sheet */
 
 /* Themes */
