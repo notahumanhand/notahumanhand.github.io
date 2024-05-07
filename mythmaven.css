@@ -231,12 +231,14 @@ footer {
 input, select {
     color: var(--text);
     outline: unset;
-    min-width: 150px;
+    width: 90%;
+}
+input[type="number"], select[type="number"] {
     text-align: center;
 }
 input.thin {
-    min-width: 50px;
     width: 50px;
+    width: 45%;
 }
 label {
     color: var(--text);
@@ -256,6 +258,10 @@ label {
     padding: 25px;
     border: 5px double var(--primary);
     border-radius: 25px;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 .field {
     display: flex;

@@ -42,84 +42,33 @@
                 <a href="index.html">Return to Homepage</a>
             </div>
             <br>
-            <div class="sheet">
-            <h2 class="name"><label for="name">Name: </label><input type="text" id="name" name="name" class="fillable" onchange="update()"></h2>
-                <div class="attributes field">
-                    <div class="field-item">
-                        <label for="might">Might</label><br>
-                        <input type="number" min="0" max="5" id="might" name="might" placeholder="0" value="0" class="fillable" onchange="update()">
-                    </div>
-                    <div class="field-item">
-                        <label for="agility">Agility</label><br>
-                        <input type="number" min="0" max="5" id="agility" name="agility" placeholder="0" value="0" class="fillable" onchange="update()">
-                    </div>
-                    <div class="field-item">
-                        <label for="knowledge">Knowledge</label><br>
-                        <input type="number" min="0" max="5" id="knowledge" name="knowledge" placeholder="0" value="0" class="fillable" onchange="update()">
-                    </div>
-                    <div class="field-item">
-                        <label for="charisma">Charisma</label><br>
-                        <input type="number" min="0" max="5" id="charisma" name="charisma" placeholder="0" value="0" class="fillable" onchange="update()">
-                    </div>
-                </div>
-                <div class="resources field">
-                    <div class="field-item">
-                        <label for="health">Health</label><br>
-                        <input type="number" min="0" max="100" id="health" name="health" placeholder="0" value="0" class="fillable" onchange="update()"> / 
-                        <input type="number" id="health-max" name="health-max" placeholder="0" value="0" class="calculated" readonly>
-                    </div>
-                    <div class="field-item">
-                        <label for="prowess">Prowess</label><br>
-                        <input type="number" min="0" max="100" id="prowess" name="prowess" placeholder="0" value="0" class="fillable" onchange="update()"> / 
-                        <input type="number" id="prowess-max" name="prowess-max" placeholder="0" value="0" class="calculated" readonly>
-                    </div>
-                    <div class="field-item">
-                        <label for="arcana">Arcana</label><br>
-                        <input type="number" min="0" max="100" id="arcana" name="arcana" placeholder="0" value="0" class="fillable" onchange="update()"> / 
-                        <input type="number" id="arcana-max" name="arcana-max" placeholder="0" value="0" class="calculated" readonly>
-                    </div>
-                </div>
-                <div class="level field">
-                    <div class="field-item">
-                        <label for="class-select">Class</label><br>
-                        <select name="class-select" id="class-select" class="class-select fillable" onchange="update()">
-                            <option value="acolyte">Acolyte</option> 
-                            <option value="fighter">Fighter</option> 
-                            <option value="guardian">Guardian</option> 
-                            <option value="mage">Mage</option> 
-                            <option value="scoundrel">Scoundrel</option> 
-                            <option value="witch">Witch</option>
-                        </select>
-                    </div>
-                    <div class="field-item">
-                        <label for="mythic-select">Mythic Path</label><br>
-                        <select name="mythic-select" id="mythic-select" class="mythic-select fillable" onchange="update()">
-                            <option value="">None</option> 
-                            <option value="crusader">Crusader</option> 
-                            <option value="dragon">Dragon</option> 
-                            <option value="legend">Legend</option> 
-                            <option value="scion">Scion</option>
-                        </select>
-                    </div>
-                    <div class="field-item">
+            <table class="sheet">
+                <tr>
+                    <td colspan="5">
+                        <h2 class="name"><label for="name">Name: </label><input type="text" id="name" name="name" class="fillable" onchange="update()"></h2>
+                    </td>
+                    <td>
                         <label for="level">Level</label><br>
                         <input type="number" min="1" max="20" id="level" name="level" placeholder="1" value="1" class="fillable" onchange="update()">
-                    </div>
-                </div>
-                <div class="info field">
-                    <div class="field-item">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="species">Species: </label><input type="text" id="species" name="species" class="fillable" onchange="update()">
+                    </td>
+                    <td>
                         <label for="size">Size</label><br>
                         <select name="size" id="size" class="size fillable" onchange="update()"> 
                             <option value="medium">Medium</option>
                             <option value="small">Small</option> 
                             <option value="large">Large</option>
                         </select>
-                    </div>
-                    <div class="field-item">
+                    </td>
+                    <td>
                         <label for="speed">Speed</label><br>
                         <input type="number" id="speed" name="speed" placeholder="6" value="6" class="calculated" readonly>
-                    </div>
-                    <div class="field-item">
+                    </td>
+                    <td>
                         <label for="armour">Armour</label><br>
                         <select name="armour" id="armour" class="armour fillable" onchange="update()">
                             <option value="unarmoured">Unarmoured</option> 
@@ -131,149 +80,205 @@
                             <option value="heavy-robes">Heavy Robes</option>
                             <option value="hybrid-armour">Hybrid Armour</option>
                         </select>
-                    </div>
-                    <div class="field-item">
+                    </td>
+                    <td>
                         <label for="shield">Shield</label><br>
                         <input type="checkbox" id="shield" name="shield" value="1" onchange="update()">
-                    </div>
-                </div>
-                <div class="defense field">
-                    <div class="field-item">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="class-select">Class</label><br>
+                        <select name="class-select" id="class-select" class="class-select fillable" onchange="update()">
+                            <option value="acolyte">Acolyte</option> 
+                            <option value="fighter">Fighter</option> 
+                            <option value="guardian">Guardian</option> 
+                            <option value="mage">Mage</option> 
+                            <option value="scoundrel">Scoundrel</option> 
+                            <option value="witch">Witch</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="mythic-select">Mythic Path</label><br>
+                        <select name="mythic-select" id="mythic-select" class="mythic-select fillable" onchange="update()">
+                            <option value="">None</option> 
+                            <option value="crusader">Crusader</option> 
+                            <option value="dragon">Dragon</option> 
+                            <option value="legend">Legend</option> 
+                            <option value="scion">Scion</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="might">Might</label><br>
+                        <input type="number" min="0" max="5" id="might" name="might" placeholder="0" value="0" class="fillable" onchange="update()">
+                    </td>
+                    <td>
+                        <label for="agility">Agility</label><br>
+                        <input type="number" min="0" max="5" id="agility" name="agility" placeholder="0" value="0" class="fillable" onchange="update()">
+                    </td>
+                    <td>
+                        <label for="knowledge">Knowledge</label><br>
+                        <input type="number" min="0" max="5" id="knowledge" name="knowledge" placeholder="0" value="0" class="fillable" onchange="update()">
+                    </td>
+                    <td>
+                        <label for="charisma">Charisma</label><br>
+                        <input type="number" min="0" max="5" id="charisma" name="charisma" placeholder="0" value="0" class="fillable" onchange="update()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="health">Health</label><br>
+                        <input type="number" min="0" max="100" id="health" name="health" placeholder="0" value="0" class="fillable thin" onchange="update()"> / 
+                        <input type="number" id="health-max" name="health-max" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td colspan="2">
+                        <label for="prowess">Prowess</label><br>
+                        <input type="number" min="0" max="100" id="prowess" name="prowess" placeholder="0" value="0" class="fillable thin" onchange="update()"> / 
+                        <input type="number" id="prowess-max" name="prowess-max" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td colspan="2">
+                        <label for="arcana">Arcana</label><br>
+                        <input type="number" min="0" max="100" id="arcana" name="arcana" placeholder="0" value="0" class="fillable thin" onchange="update()"> / 
+                        <input type="number" id="arcana-max" name="arcana-max" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <label for="physical-defense">Physical Defense</label><br>
                         <input type="number" id="physical-defense" name="physical-defense" placeholder="2" value="2" class="calculated" readonly>
-                    </div>
-                    <div class="field-item">
+                    </td>
+                    <td>
                         <label for="magical-defense">Magical Defense</label><br>
                         <input type="number" id="magical-defense" name="magical-defense" placeholder="2" value="2" class="calculated" readonly>
-                    </div>
-                </div>
-                <div class="skills field">
-                    <div class="field-item prof-item">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <label for="prof">Proficiency Maximum</label><br>
                         <input type="number" id="prof" name="prof" placeholder="2" value="2" class="calculated" readonly>
-                    </div>
-                    <div class="field-item skills">
-                        <p>Might</p>
-                        <div class="skills-group">
-                            <div class="field-item">
-                                <label for="fortitude">Fortitude</label><br>
-                                <input type="number" min="0" max="7" id="fortitude" name="fortitude" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="fortitude-total" name="fortitude-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="athletics">Athletics</label><br>
-                                <input type="number" min="0" id="athletics" name="athletics" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="athletics-total" name="athletics-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field-item skills">
-                        <p>Agility</p>
-                        <div class="skills-group">
-                            <div class="field-item">
-                                <label for="reflex">Reflex</label><br>
-                                <input type="number" min="0" max="7" id="reflex" name="reflex" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="reflex-total" name="reflex-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="acrobatics">Acrobatics</label><br>
-                                <input type="number" min="0" max="7" id="acrobatics" name="acrobatics" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="acrobatics-total" name="acrobatics-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="stealth">Stealth</label><br>
-                                <input type="number" min="0" max="7" id="stealth" name="stealth" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="stealth-total" name="stealth-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="sleight">Sleight of Hand</label><br>
-                                <input type="number" min="0" max="7" id="sleight" name="sleight" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="sleight-total" name="sleight-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field-item skills">
-                        <p>Knowledge</p>
-                        <div class="skills-group">
-                            <div class="field-item">
-                                <label for="focus">Focus</label><br>
-                                <input type="number" min="0" max="7" id="focus" name="focus" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="focus-total" name="focus-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="history">History</label><br>
-                                <input type="number" min="0" max="7" id="history" name="history" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="history-total" name="history-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="magic">Magic</label><br>
-                                <input type="number" min="0" max="7" id="magic" name="magic" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="magic-total" name="magic-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="medicine">Medicine</label><br>
-                                <input type="number" min="0" max="7" id="medicine" name="medicine" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="medicine-total" name="medicine-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="nature">Nature</label><br>
-                                <input type="number" min="0" max="7" id="nature" name="nature" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="nature-total" name="nature-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="religion">Religion</label><br>
-                                <input type="number" min="0" max="7" id="religion" name="religion" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="religion-total" name="religion-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="world">World</label><br>
-                                <input type="number" min="0" max="7" id="world" name="world" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="world-total" name="world-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field-item skills">
-                        <p>Charisma</p>
-                        <div class="skills-group">
-                            <div class="field-item">
-                                <label for="will">Will</label><br>
-                                <input type="number" min="0" max="7" id="will" name="will" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="will-total" name="will-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="deception">Deception</label><br>
-                                <input type="number" min="0" max="7" id="deception" name="deception" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="deception-total" name="deception-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="insight">Insight</label><br>
-                                <input type="number" min="0" max="7" id="insight" name="insight" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="insight-total" name="insight-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="intimidation">Intimidation</label><br>
-                                <input type="number" min="0" max="7" id="intimidation" name="intimidation" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="intimidation-total" name="intimidation-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="perception">Perception</label><br>
-                                <input type="number" min="0" max="7" id="perception" name="perception" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="perception-total" name="perception-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="performance">Performance</label><br>
-                                <input type="number" min="0" max="7" id="performance" name="performance" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="performance-total" name="performance-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                            <div class="field-item">
-                                <label for="persuasion">Persuasion</label><br>
-                                <input type="number" min="0" max="7" id="persuasion" name="persuasion" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
-                                <input type="number" id="persuasion-total" name="persuasion-total" placeholder="0" value="0" class="calculated thin" readonly>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Might</td>
+                    <td>
+                        <label for="fortitude">Fortitude</label><br>
+                        <input type="number" min="0" max="7" id="fortitude" name="fortitude" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="fortitude-total" name="fortitude-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="athletics">Athletics</label><br>
+                        <input type="number" min="0" id="athletics" name="athletics" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="athletics-total" name="athletics-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Agility</td>
+                    <td>
+                        <label for="reflex">Reflex</label><br>
+                        <input type="number" min="0" max="7" id="reflex" name="reflex" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="reflex-total" name="reflex-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="acrobatics">Acrobatics</label><br>
+                        <input type="number" min="0" max="7" id="acrobatics" name="acrobatics" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="acrobatics-total" name="acrobatics-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="stealth">Stealth</label><br>
+                        <input type="number" min="0" max="7" id="stealth" name="stealth" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="stealth-total" name="stealth-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="sleight">Sleight of Hand</label><br>
+                        <input type="number" min="0" max="7" id="sleight" name="sleight" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="sleight-total" name="sleight-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Knowledge</td>
+                    <td>
+                        <label for="focus">Focus</label><br>
+                        <input type="number" min="0" max="7" id="focus" name="focus" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="focus-total" name="focus-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="history">History</label><br>
+                        <input type="number" min="0" max="7" id="history" name="history" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="history-total" name="history-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="magic">Magic</label><br>
+                        <input type="number" min="0" max="7" id="magic" name="magic" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="magic-total" name="magic-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="medicine">Medicine</label><br>
+                        <input type="number" min="0" max="7" id="medicine" name="medicine" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="medicine-total" name="medicine-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <label for="nature">Nature</label><br>
+                        <input type="number" min="0" max="7" id="nature" name="nature" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="nature-total" name="nature-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="religion">Religion</label><br>
+                        <input type="number" min="0" max="7" id="religion" name="religion" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="religion-total" name="religion-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="world">World</label><br>
+                        <input type="number" min="0" max="7" id="world" name="world" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="world-total" name="world-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Charisma</td>
+                    <td>
+                        <label for="will">Will</label><br>
+                        <input type="number" min="0" max="7" id="will" name="will" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="will-total" name="will-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="deception">Deception</label><br>
+                        <input type="number" min="0" max="7" id="deception" name="deception" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="deception-total" name="deception-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="insight">Insight</label><br>
+                        <input type="number" min="0" max="7" id="insight" name="insight" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="insight-total" name="insight-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="intimidation">Intimidation</label><br>
+                        <input type="number" min="0" max="7" id="intimidation" name="intimidation" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="intimidation-total" name="intimidation-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <label for="perception">Perception</label><br>
+                        <input type="number" min="0" max="7" id="perception" name="perception" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="perception-total" name="perception-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="performance">Performance</label><br>
+                        <input type="number" min="0" max="7" id="performance" name="performance" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="performance-total" name="performance-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                    <td>
+                        <label for="persuasion">Persuasion</label><br>
+                        <input type="number" min="0" max="7" id="persuasion" name="persuasion" placeholder="0" value="0" class="fillable thin skill" onchange="update()">
+                        <input type="number" id="persuasion-total" name="persuasion-total" placeholder="0" value="0" class="calculated thin" readonly>
+                    </td>
+                </tr>
+            </table>
         </div>
         <br>
         <footer>
