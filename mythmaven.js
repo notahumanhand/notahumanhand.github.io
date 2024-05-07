@@ -135,3 +135,13 @@ function theme() {
     document.getElementById('sheet-body').removeAttribute("class");
     document.getElementById('sheet-body').classList.add(theme_select);
 }
+
+function link() {
+    const element = document.getElementById('journal-link');
+    const link = element.getAttribute("href");
+    if (link=="#popup-box") {
+        element.setAttribute("href", "#");
+    } else {
+        element.setAttribute("href", "#popup-box");
+    }
+}

@@ -84,6 +84,7 @@ footer {
     border: var(--primary) dotted 2px;
     padding: 0px 10px;
     border-radius: 15px;
+    z-index: 50;
 }
 .infobox {
     font-style: italic;
@@ -384,22 +385,6 @@ td small {
     visibility: visible;
     background: var(--tertiary);
     opacity: 1;
-}
-.box-close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    text-decoration: none;
-    font-size: 30px;
-    border-radius: 5px;
-    padding: 0;
-    width: 33px;
-    height: 33px;
-    text-align: center;
-    font-family: Arial;
-}
-.box-close:hover {
-    text-decoration: none;
 }
 .modal h1 {
     margin: 5px;

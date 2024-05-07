@@ -493,11 +493,8 @@
             </table>
         </div>
         <br>
-        <div class="journal-btn"><a href="#popup-box"><img src="journal.png" class="journal"></a></div>
+        <div class="journal-btn"><a id="journal-link" href="#popup-box" onclick="link()"><img src="journal.png" class="journal"></a></div>
         <div id="popup-box" class="modal">
-            <a href="#" class="box-close btn" id="box-close">
-                ×
-            </a>
             <h1 class="journal-title">Journal</h1>
             <label for="gen-info">General Information</label><br>
             <textarea id="gen-info" name="gen-info" rows="5" cols="100" class="fillable"></textarea><br>
