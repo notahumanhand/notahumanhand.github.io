@@ -323,7 +323,7 @@ td small {
     color: var(--fill);
     padding: 5px;
     border-radius: 15px;
-    background: var(--t-primary);
+    background: var(--primary);
 }
 .theme-select {
     background: var(--t-primary);
@@ -382,7 +382,7 @@ body.vibrance {
     --t-primary: #bd3b2f80;
     --secondary: #b5c41f;
     --tertiary: #f3eec2;
-    --t-tertiary: #f3eec280;
+    --t-tertiary: #b6c328;
     --link: #f86979;
     --h-link: #c15561;
 }
@@ -404,7 +404,7 @@ body.bloodstains {
     --t-primary: #6d3a3580;
     --secondary: #72221b;
     --tertiary: #d9d1ca;
-    --t-tertiary: #d9d1ca80;
+    --t-tertiary: #8e686880;
     --link: #690700;
     --h-link: #b00c00;
 }
@@ -417,7 +417,7 @@ body.wooded {
     --t-fill: #f6f5e580;
     --secondary: #8cb764;
     --tertiary: #e1d1be;
-    --t-tertiary: #e1d1be80;
+    --t-tertiary: #8cb76480;
     --link: #57524a;
     --h-link: #57524a80;
 }
@@ -428,9 +428,9 @@ body.summer {
     --t-primary: #e1ae65;
     --secondary: #46baa1;
     --tertiary: #fcf8c7;
-    --t-tertiary: #fcf8c780;
+    --t-tertiary: #fcc7c7;
     --link: #e28f19;
-    --h-link: #f5a83e;
+    --h-link: #f5a83e99;
 }
 
 body.shadow {
@@ -463,7 +463,7 @@ body.fey {
     --t-primary: #a518e180;
     --secondary: #b91c87;
     --tertiary: #fae0fb;
-    --t-tertiary: #fae0fb80;
+    --t-tertiary: #abebd7f5;
     --link: #e2197a;
     --h-link: #b50359;
 }
@@ -473,8 +473,8 @@ body.whiteout {
     --primary: black;
     --t-primary: white;
     --secondary: black;
-    --tertiary: #c5c5c5;
-    --t-tertiary: #c5c5c580;
+    --tertiary: #d6d6d6;
+    --t-tertiary: #ffffff80;
     --link: #363636;
     --h-link: #2d2d2d;
 }
@@ -484,8 +484,8 @@ body.waves {
     --primary: #1d9288;
     --t-primary: #1d928880;
     --secondary: #226463;
-    --tertiary: #e5f6f6;
-    --t-tertiary: #e5f6f680;
+    --tertiary: #f6ece5;
+    --t-tertiary: #8ec5e780;
     --link: #1d6759;
     --h-link: #0d443a;
 }
@@ -495,8 +495,8 @@ body.eternity {
     --primary: #471152;
     --t-primary: #47115280;
     --secondary: #b780e7;
-    --tertiary: #f7e8f9;
-    --t-tertiary: #f7e8f980;
+    --tertiary: #fef2d2;
+    --t-tertiary: #fac97980;
     --link: #703aad;
     --h-link: #531f8f;
 }
@@ -507,7 +507,7 @@ body.lover {
     --t-primary: #6d355480;
     --secondary: #721b56;
     --tertiary: #f7e5eb;
-    --t-tertiary: #f7e5eb80;
+    --t-tertiary: #ffa0a080;
     --link: #690700;
     --h-link: #b00c00;
 }
@@ -518,7 +518,7 @@ body.beach {
     --t-primary: #46baa180;
     --secondary: #340c02;
     --tertiary: #fcf8c7;
-    --t-tertiary: #fcf8c780;
+    --t-tertiary: #ffffff80;
     --link: #e28f19;
     --h-link: #f5a83e;
 }
@@ -542,7 +542,7 @@ body.gilded {
     --t-primary: #40000080;
     --secondary: #d09600;
     --tertiary: #f0e3c4;
-    --t-tertiary: #f0e3c480;
+    --t-tertiary: #d0960066;
     --link: #98640b;
     --h-link: #ba7600;
 }
