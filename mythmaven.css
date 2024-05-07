@@ -311,6 +311,11 @@ td small {
         display: none;
     }
 }
+@media (min-width: 600px) {
+    .mobile {
+        display: none;
+    }
+}
 .separator {
     font-family: 'Cormorant SC';
     font-size: 30px;
