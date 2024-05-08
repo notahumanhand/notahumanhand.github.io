@@ -5,6 +5,7 @@ function update() {
     arcana();
     speed();
     skills();
+    defense();
 }
 function health() {
     let might = document.getElementById('might').value;
@@ -33,6 +34,38 @@ function arcana() {
     }
     document.getElementById('arcana-max').value = arcana;
     document.getElementById('arcana').max = arcana;
+}
+function defense() {
+    const fortitude = 1*document.getElementById('fortitude-total').value;
+    const reflex = 1*document.getElementById('reflex-total').value;
+    const prof = 1*document.getElementById('prof').value;
+    const armour = document.getElementById('armour').value;
+    let physarmour = 0;
+    let magarmour = 0;
+    if (armour=="light-armour") {
+        physarmour = 1;
+    } else if (armour=="medium-armour") {
+        physarmour = 2;
+    } else if (armour=="heavy-armour") {
+        physarmour = 4;
+    } else if (armour=="light-robes") {
+        magarmour = 1;
+    } else if (armour=="medium-robes") {
+        magarmour = 2;
+    } else if (armour=="heavy-armour") {
+        magarmour = 4;
+    } else if (armour=="hybrid-armour") {
+        physarmour = 1;
+        magarmour = 1;
+    }
+    if (document.getElementById('shield').checked) {
+        physarmour += 1;
+    }
+    const physdef = fortitude+prof+physarmour;
+    const magdef = reflex+prof+magarmour;
+
+    document.getElementById('physical-defense').value = physdef;
+    document.getElementById('magical-defense').value = magdef;
 }
 function speed() {
     let size = document.getElementById('size').value;
