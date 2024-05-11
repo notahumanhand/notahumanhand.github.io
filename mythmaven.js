@@ -24,12 +24,13 @@ function prowess() {
     document.getElementById('prowess').max = prowess;
 }
 function arcana() {
-    let level = document.getElementById('level').value; 
-    let charisma = document.getElementById('charisma').value;
-    let knowledge = document.getElementById('knowledge').value;
+    let level = 1*document.getElementById('level').value; 
+    let charisma = 1*document.getElementById('charisma').value;
+    let knowledge = 1*document.getElementById('knowledge').value;
 
     let arcana = Math.ceil(level/2) * charisma;
-    if (document.getElementById('class-select') == "mage") {
+
+    if (document.getElementById('class-select').value == "mage") {
         arcana = arcana+knowledge;
     }
     document.getElementById('arcana-max').value = arcana;
@@ -52,7 +53,7 @@ function defense() {
         magarmour = 1;
     } else if (armour=="medium-robes") {
         magarmour = 2;
-    } else if (armour=="heavy-armour") {
+    } else if (armour=="heavy-robes") {
         magarmour = 4;
     } else if (armour=="hybrid-armour") {
         physarmour = 1;
