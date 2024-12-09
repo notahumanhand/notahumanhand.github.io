@@ -166,8 +166,8 @@ function setname() {
 
 function theme() {
     let theme_select = document.getElementById('theme-select').value;
-    document.getElementById('sheet-body').removeAttribute("class");
-    document.getElementById('sheet-body').classList.add(theme_select);
+    document.getElementById('body').removeAttribute("class");
+    document.getElementById('body').classList.add(theme_select);
 }
 
 function link() {

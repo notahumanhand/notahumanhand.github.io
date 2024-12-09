@@ -93,7 +93,7 @@ footer {
     margin: auto;
     margin-bottom: 20px;
 }
-.login-btn, .logout-btn, .import-export {
+.login-btn, .logout-btn, .import-export, .save-btn, .account-btn {
     background: var(--primary);
     border-radius: 10px;
     padding: 5px;
@@ -102,7 +102,7 @@ footer {
     max-width: 120px;
     text-align: center;
 }
-.login-btn:hover, .logout-btn:hover {
+.login-btn:hover, .logout-btn:hover, .save-btn:hover, .account-btn:hover {
     color: white;
     text-decoration: none;
 }
